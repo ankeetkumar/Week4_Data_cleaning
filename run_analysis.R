@@ -1,9 +1,9 @@
 #Data Downlaod
-wget(" https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ")
-#go to folder
-setwd("path to the folder")
+url = paste0("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip")
+destfile =  paste0("dataset.zip")
+download.file(url,destfile , quiet = FALSE, mode = "wb", cacheOK =  TRUE)
 #Unzip
-unzip("getdata_projectfiles_UCI HAR Dataset")
+unzip("dataset.zip")
 ##Week4 Data_Cleaning
 #loading the data
 y_train <-read.table("UCI HAR Dataset/train/y_train.txt")
