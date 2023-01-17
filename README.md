@@ -17,4 +17,25 @@ The R script run_analysis.R can be used to create the data set. It retrieves the
 
 Download and unzip source data if it doesn't exist. Read data. Merge the training and the test sets to create one data set. Extract only the measurements on the mean and standard deviation for each measurement. Use descriptive activity names to name the activities in the data set. Appropriately label the data set with descriptive variable names. Create a second, independent tidy set with the average of each variable for each activity and each subject. Write the data set to the tidy_data.txt file. The tidy_data.txt in this repository was created by running the run_analysis.R script using R version 3.2.2 (2015-08-14) on Windows 8.1 64-bit edition.
 
-This script requires the dplyr package (version 0.4.3 was used).
+This script requires the dplyr package. I used this specification
+R version 4.2.2 (2022-10-31 ucrt)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 22621)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_India.utf8 
+[2] LC_CTYPE=English_India.utf8   
+[3] LC_MONETARY=English_India.utf8
+[4] LC_NUMERIC=C                  
+[5] LC_TIME=English_India.utf8    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods  
+[7] base     
+
+other attached packages:
+[1] forcats_0.5.2   stringr_1.5.0   dplyr_1.0.10   
+[4] purrr_1.0.0     readr_2.1.3     tidyr_1.2.1    
+[7] tibble_3.1.8    ggplot2_3.4.0   tidyverse_1.3.2
